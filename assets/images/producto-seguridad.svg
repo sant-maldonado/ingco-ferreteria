@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect fill="#1A1A1A" width="400" height="300"/>
+  <g transform="translate(200,140)">
+    <!-- Casco seguridad -->
+    <ellipse cx="0" cy="10" rx="50" ry="15" fill="#333"/>
+    <path d="M-50,10 Q-50,-40 0,-50 Q50,-40 50,10" fill="#FF6600"/>
+    <rect x="-55" y="5" width="110" height="8" rx="4" fill="#333"/>
+  </g>
+  <text x="200" y="250" text-anchor="middle" fill="#666" font-family="Arial" font-size="14">Seguridad Industrial</text>
+</svg>

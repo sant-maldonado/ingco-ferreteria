@@ -1,0 +1,251 @@
+/* ============================================
+   LANDING 1 - PROFESIONAL / CORPORATIVA
+   ============================================ */
+
+/* Hero Profesional */
+.hero-pro {
+  background: linear-gradient(135deg, #0D0D0D 0%, #1A1A1A 50%, #2A2A2A 100%);
+  color: var(--ingco-white);
+  padding: 100px 40px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-pro-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="80" cy="20" r="15" fill="%23FF6600" opacity="0.08"/></svg>') no-repeat;
+  background-size: cover;
+}
+
+.hero-pro-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-pro-tag {
+  display: inline-block;
+  background: var(--ingco-orange);
+  color: var(--ingco-white);
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero-pro h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero-pro h1 span {
+  color: var(--ingco-orange);
+}
+
+.hero-pro p {
+  font-size: 1.15rem;
+  opacity: 0.85;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+.hero-pro-btns {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 50px;
+}
+
+.hero-cta-outline {
+  display: inline-block;
+  padding: 14px 36px;
+  border: 2px solid var(--ingco-white);
+  color: var(--ingco-white);
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: all 0.2s;
+}
+
+.hero-cta-outline:hover {
+  background: var(--ingco-white);
+  color: var(--ingco-black);
+}
+
+.hero-pro-stats {
+  display: flex;
+  gap: 50px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat strong {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--ingco-orange);
+}
+
+.stat span {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Promo card del hero */
+.promo-card-big {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  text-align: center;
+}
+
+.promo-card-img {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.promo-card-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.promo-card-price .promo-old {
+  color: rgba(255,255,255,0.4);
+  text-decoration: line-through;
+  font-size: 1rem;
+}
+
+.promo-card-price .promo-new {
+  color: var(--ingco-orange);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.promo-card-price .promo-discount {
+  background: var(--ingco-orange);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.promo-card-big p {
+  color: rgba(255,255,255,0.8);
+  font-size: 1rem;
+}
+
+/* Trust Band */
+.trust-band {
+  background: var(--ingco-orange);
+  padding: 50px 40px;
+}
+
+.trust-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.trust-item {
+  text-align: center;
+  color: var(--ingco-white);
+}
+
+.trust-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.trust-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.trust-item p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Testimonials */
+.testimonials {
+  background: var(--ingco-gray-light);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.testimonial-card {
+  background: var(--ingco-white);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+}
+
+.testimonial-stars {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+.testimonial-card p {
+  color: var(--ingco-gray);
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.testimonial-author strong {
+  display: block;
+  color: var(--ingco-black);
+  font-size: 0.95rem;
+}
+
+.testimonial-author span {
+  color: var(--ingco-gray-medium);
+  font-size: 0.85rem;
+}
+
+/* Responsive Landing 1 */
+@media (max-width: 900px) {
+  .hero-pro-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-pro p { margin-left: auto; margin-right: auto; }
+  .hero-pro-btns { justify-content: center; }
+  .hero-pro-stats { justify-content: center; }
+  .trust-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-grid { grid-template-columns: 1fr; }
+}

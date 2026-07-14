@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{NOMBRE_TIENDA}} - Catálogo de Productos</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/landing-3.css">
+</head>
+<body>
+
+  <!-- HEADER MINIMALISTA -->
+  <header class="header header-minimal">
+    <div class="header-main">
+      <a href="#" class="logo">
+        <div class="logo-text">INGCO<span>FERRETERÍA</span></div>
+      </a>
+      <nav class="nav-minimal">
+        <a href="#" class="active">Todos</a>
+        <a href="#">Eléctricas</a>
+        <a href="#">Manuales</a>
+        <a href="#">Jardín</a>
+        <a href="#">Seguridad</a>
+      </nav>
+      <div class="header-actions-minimal">
+        <div class="search-minimal">
+          <input type="text" placeholder="Buscar...">
+          <button>🔍</button>
+        </div>
+        <a href="#" class="cart-minimal">🛒 (0)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO LIMPIO -->
+  <section class="hero-minimal">
+    <div class="hero-minimal-content">
+      <h1>Todo lo que necesitás,<br>en <span>un solo lugar</span></h1>
+      <p>{{SLOGAN}}</p>
+    </div>
+  </section>
+
+  <!-- FILTROS CATEGORÍAS -->
+  <section class="section-catalogo">
+    <div class="catalogo-layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-section">
+          <h4>Categorías</h4>
+          <div class="sidebar-categorias">
+            <a href="#" class="sidebar-link active">Todos los productos</a>
+            {{SIDEBAR_CATEGORIAS}}
+          </div>
+        </div>
+        <div class="sidebar-section">
+          <h4>Rango de Precios</h4>
+          <div class="sidebar-links">
+            <a href="#" class="sidebar-link">Hasta $25</a>
+            <a href="#" class="sidebar-link">$25 - $50</a>
+            <a href="#" class="sidebar-link">$50 - $100</a>
+            <a href="#" class="sidebar-link">$100 - $200</a>
+            <a href="#" class="sidebar-link">Más de $200</a>
+          </div>
+        </div>
+        <div class="sidebar-section">
+          <h4>Ordenar por</h4>
+          <div class="sidebar-links">
+            <a href="#" class="sidebar-link active">Destacados</a>
+            <a href="#" class="sidebar-link">Menor precio</a>
+            <a href="#" class="sidebar-link">Mayor precio</a>
+            <a href="#" class="sidebar-link">Más vendidos</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- GRID PRODUCTOS -->
+      <main class="catalogo-main">
+        <div class="catalogo-header">
+          <h2>Todos los Productos</h2>
+          <span class="catalogo-count">{{TOTAL_PRODUCTOS}} productos</span>
+        </div>
+        <div class="productos-grid catalogo-grid">
+          {{TODOS_LOS_PRODUCTOS}}
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- FOOTER SIMPLE -->
+  <footer class="footer footer-minimal">
+    <div class="footer-minimal-content">
+      <div class="footer-minimal-left">
+        <div class="logo-text" style="font-size:1.4rem;">INGCO<span style="color:#FF6600;">FERRETERÍA</span></div>
+        <p>{{SLOGAN}}</p>
+      </div>
+      <div class="footer-minimal-center">
+        <a href="#">WhatsApp: {{WHATSAPP}}</a>
+        <a href="#">📍 {{DIRECCION}}</a>
+      </div>
+      <div class="footer-minimal-right">
+        <span>&copy; 2026 {{NOMBRE_TIENDA}}</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/{{WHATSAPP}}" class="whatsapp-float" target="_blank">💬</a>
+
+</body>
+</html>

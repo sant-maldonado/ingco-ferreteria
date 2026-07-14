@@ -1,0 +1,265 @@
+/* ============================================
+   LANDING 2 - PROMOCIONAL / OFERTAS
+   ============================================ */
+
+/* Header Promo */
+.header-top-promo {
+  background: linear-gradient(90deg, #CC0000 0%, #FF3300 100%);
+  animation: pulse-bg 2s infinite;
+}
+
+@keyframes pulse-bg {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.9; }
+}
+
+/* Hero Promocional */
+.hero-promo {
+  background: linear-gradient(135deg, #1A1A1A 0%, #2D0A00 100%);
+  color: var(--ingco-white);
+  padding: 80px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-promo::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,102,0,0.3) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.hero-promo-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-promo-badge {
+  display: inline-block;
+  background: #CC0000;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  animation: badge-pulse 1.5s infinite;
+}
+
+@keyframes badge-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+.hero-promo h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero-promo h1 span {
+  color: var(--ingco-orange);
+  text-shadow: 0 0 30px rgba(255,102,0,0.5);
+}
+
+.hero-promo > .hero-promo-content > .hero-promo-left > p {
+  font-size: 1.15rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+/* Countdown */
+.hero-promo-countdown {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.countdown-item {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  text-align: center;
+  min-width: 70px;
+}
+
+.countdown-num {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--ingco-orange);
+  font-variant-numeric: tabular-nums;
+}
+
+.countdown-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  opacity: 0.7;
+  letter-spacing: 1px;
+}
+
+/* Promo card hero */
+.promo-card-big {
+  background: rgba(255,255,255,0.08);
+  border: 2px solid var(--ingco-orange);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-card-big::before {
+  content: '-40%';
+  position: absolute;
+  top: 15px;
+  right: -30px;
+  background: #CC0000;
+  color: white;
+  padding: 8px 40px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  transform: rotate(45deg);
+}
+
+.promo-card-img {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.promo-card-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.promo-card-price .promo-old {
+  color: rgba(255,255,255,0.4);
+  text-decoration: line-through;
+  font-size: 1rem;
+}
+
+.promo-card-price .promo-new {
+  color: var(--ingco-orange);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.promo-card-price .promo-discount {
+  background: #CC0000;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.promo-card-big p {
+  color: rgba(255,255,255,0.8);
+  font-size: 1rem;
+}
+
+/* Categorías promo */
+.promo-categorias .categoria-card {
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.promo-categorias .categoria-card:hover {
+  border-color: #CC0000;
+  box-shadow: 0 0 20px rgba(204,0,0,0.2);
+}
+
+/* Banner urgencia */
+.promo-banner-urgencia {
+  background: linear-gradient(90deg, #CC0000, #FF3300, #CC0000);
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  border-radius: var(--radius);
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 1rem;
+  animation: urgencia-slide 3s infinite;
+}
+
+@keyframes urgencia-slide {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Newsletter */
+.newsletter-section {
+  background: var(--ingco-black);
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.newsletter-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter-content h3 {
+  color: var(--ingco-white);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.newsletter-content p {
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 24px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.newsletter-form input {
+  flex: 1;
+  max-width: 350px;
+  padding: 14px 20px;
+  border-radius: 30px;
+  border: 2px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.newsletter-form input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.newsletter-form input:focus {
+  border-color: var(--ingco-orange);
+}
+
+/* Responsive Landing 2 */
+@media (max-width: 900px) {
+  .hero-promo-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-promo-countdown { justify-content: center; }
+  .newsletter-form { flex-direction: column; align-items: center; }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect fill="#1A1A1A" width="400" height="300"/>
+  <g transform="translate(200,140)">
+    <!-- Martillo -->
+    <rect x="-6" y="0" width="12" height="80" rx="3" fill="#8B4513"/>
+    <rect x="-25" y="-10" width="50" height="25" rx="4" fill="#FF6600"/>
+    <rect x="-25" y="-10" width="15" height="25" rx="2" fill="#888"/>
+  </g>
+  <text x="200" y="250" text-anchor="middle" fill="#666" font-family="Arial" font-size="14">Martillo</text>
+</svg>

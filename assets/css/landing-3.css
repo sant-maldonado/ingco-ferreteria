@@ -1,0 +1,276 @@
+/* ============================================
+   LANDING 3 - MINIMALISTA / CATÁLOGO
+   ============================================ */
+
+/* Header Minimalista */
+.header-minimal {
+  background: var(--ingco-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.header-minimal .header-main {
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-minimal .logo-text {
+  color: var(--ingco-black);
+}
+
+.nav-minimal {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-minimal a {
+  color: var(--ingco-gray);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.nav-minimal a:hover,
+.nav-minimal a.active {
+  background: var(--ingco-black);
+  color: var(--ingco-white);
+}
+
+.header-actions-minimal {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.search-minimal {
+  position: relative;
+}
+
+.search-minimal input {
+  padding: 8px 36px 8px 14px;
+  border: 1px solid var(--ingco-border);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  width: 200px;
+  outline: none;
+  transition: width 0.3s, border-color 0.2s;
+}
+
+.search-minimal input:focus {
+  width: 280px;
+  border-color: var(--ingco-orange);
+}
+
+.search-minimal button {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.cart-minimal {
+  color: var(--ingco-black);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Hero Minimalista */
+.hero-minimal {
+  background: var(--ingco-white);
+  padding: 60px 40px;
+  text-align: center;
+  border-bottom: 1px solid var(--ingco-border);
+}
+
+.hero-minimal h1 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: var(--ingco-black);
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.hero-minimal h1 span {
+  font-weight: 700;
+  color: var(--ingco-orange);
+}
+
+.hero-minimal p {
+  color: var(--ingco-gray-medium);
+  font-size: 1.1rem;
+}
+
+/* Layout Catálogo */
+.section-catalogo {
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.catalogo-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 40px;
+}
+
+/* Sidebar */
+.sidebar {
+  position: sticky;
+  top: 100px;
+  align-self: start;
+}
+
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.sidebar-section h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ingco-gray-medium);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.sidebar-categorias,
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 8px 12px;
+  color: var(--ingco-gray);
+  text-decoration: none;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.sidebar-link:hover {
+  background: var(--ingco-gray-light);
+  color: var(--ingco-black);
+}
+
+.sidebar-link.active {
+  background: var(--ingco-black);
+  color: var(--ingco-white);
+}
+
+/* Catálogo Main */
+.catalogo-main {
+  min-width: 0;
+}
+
+.catalogo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.catalogo-header h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.catalogo-count {
+  color: var(--ingco-gray-medium);
+  font-size: 0.9rem;
+}
+
+.catalogo-grid {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.catalogo-grid .producto-card {
+  border: 1px solid var(--ingco-border);
+  border-radius: var(--radius);
+}
+
+.catalogo-grid .producto-card:hover {
+  border-color: var(--ingco-orange);
+}
+
+.catalogo-grid .producto-imagen {
+  height: 160px;
+}
+
+/* Footer Minimalista */
+.footer-minimal {
+  background: var(--ingco-white);
+  border-top: 1px solid var(--ingco-border);
+  padding: 30px 40px;
+}
+
+.footer-minimal-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-minimal-left p {
+  color: var(--ingco-gray-medium);
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+.footer-minimal-center {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-minimal-center a {
+  color: var(--ingco-gray);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-minimal-center a:hover {
+  color: var(--ingco-orange);
+}
+
+.footer-minimal-right span {
+  color: var(--ingco-gray-medium);
+  font-size: 0.85rem;
+}
+
+/* Responsive Landing 3 */
+@media (max-width: 900px) {
+  .header-minimal .header-main {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .nav-minimal { flex-wrap: wrap; }
+  .catalogo-layout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    position: static;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .sidebar-section { margin-bottom: 0; }
+  .footer-minimal-content {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}

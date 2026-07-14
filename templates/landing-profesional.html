@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{NOMBRE_TIENDA}} - Landing Profesional</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/landing-1.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-top">{{HORARIO}} | {{DIRECCION}}</div>
+    <div class="header-main">
+      <a href="#" class="logo">
+        <div class="logo-text">INGCO<span>FERRETERÍA</span></div>
+      </a>
+      <div class="header-search">
+        <input type="text" placeholder="Buscar herramientas, productos...">
+        <button>🔍</button>
+      </div>
+      <div class="header-actions">
+        <a href="#">👤 Mi Cuenta</a>
+        <a href="#">🛒 Carrito (0)</a>
+      </div>
+    </div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#" class="active">Inicio</a></li>
+        <li><a href="#">Catálogo</a></li>
+        <li><a href="#">Eléctricas</a></li>
+        <li><a href="#">Manuales</a></li>
+        <li><a href="#">Jardín</a></li>
+        <li><a href="#">Seguridad</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO PROFESIONAL -->
+  <section class="hero-pro">
+    <div class="hero-pro-overlay"></div>
+    <div class="hero-pro-content">
+      <span class="hero-pro-tag">Distribuidor Oficial Ingco</span>
+      <h1>Herramientas <span>Profesionales</span> de Calidad Mundial</h1>
+      <p>Más de 20 años respaldando a profesionales con la mejor calidad y garantía oficial Ingco en cada producto.</p>
+      <div class="hero-pro-btns">
+        <a href="#destacados" class="hero-cta">Ver Productos Destacados</a>
+        <a href="#confianza" class="hero-cta-outline">Conocer Más</a>
+      </div>
+      <div class="hero-pro-stats">
+        <div class="stat">
+          <strong>180+</strong>
+          <span>Países</span>
+        </div>
+        <div class="stat">
+          <strong>500+</strong>
+          <span>Productos</span>
+        </div>
+        <div class="stat">
+          <strong>10K+</strong>
+          <span>Clientes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS -->
+  <section class="section">
+    <div class="section-title">
+      <h2>Nuestras Categorías</h2>
+      <p>Encontrá todo lo que necesitás para tu proyecto</p>
+      <div class="underline"></div>
+    </div>
+    <div class="categorias-grid">
+      {{CATEGORIAS}}
+    </div>
+  </section>
+
+  <!-- PRODUCTOS DESTACADOS -->
+  <section class="section" id="destacados">
+    <div class="section-title">
+      <h2>Productos Destacados</h2>
+      <p>Lo más elegidos por profesionales</p>
+      <div class="underline"></div>
+    </div>
+    <div class="productos-grid">
+      {{PRODUCTOS_DESTACADOS}}
+    </div>
+  </section>
+
+  <!-- BANDA DE CONFIANZA -->
+  <section class="trust-band" id="confianza">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon">🚚</div>
+        <h4>Envío Gratis</h4>
+        <p>En compras superiores a $50.000</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🛡️</div>
+        <h4>Garantía Ingco</h4>
+        <p>Todos nuestros productos con garantía oficial</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🔧</div>
+        <h4>Soporte Técnico</h4>
+        <p>Asesoramiento profesional experto</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">💳</div>
+        <h4>Medios de Pago</h4>
+        <p>Todas las tarjetas y transferencia</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="section testimonials">
+    <div class="section-title">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <p>Profesionales que confían en Ingco</p>
+      <div class="underline"></div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+        <p>"Las mejores herramientas que usé en mi vida. El taladro Ingco no me ha fallado en 3 años de uso intensivo."</p>
+        <div class="testimonial-author">
+          <strong>Carlos Mendoza</strong>
+          <span>Electricista Matriculado</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+        <p>"Excelente relación precio-calidad. Recomiendo Ingco a todos mis colegas del rubro de la construcción."</p>
+        <div class="testimonial-author">
+          <strong>Martín López</strong>
+          <span>Director de Obra</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+        <p>"El soporte técnico es excepcional. Me ayudaron a elegir la herramienta perfecta para mi taller."</p>
+        <div class="testimonial-author">
+          <strong>Roberto Sánchez</strong>
+          <span>Mecánico Automotriz</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h4>{{NOMBRE_TIENDA}}</h4>
+        <p>{{SLOGAN}}</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <p>📍 {{DIRECCION}}</p>
+        <p>📞 WhatsApp: {{WHATSAPP}}</p>
+        <p>🕐 {{HORARIO}}</p>
+      </div>
+      <div class="footer-col">
+        <h4>Categorías</h4>
+        {{CATEGORIAS_FOOTER}}
+      </div>
+      <div class="footer-col">
+        <h4>Medios de Pago</h4>
+        <p>Efectivo / Transferencia</p>
+        <p>Tarjetas de Crédito y Débito</p>
+        <p>Mercado Pago</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 {{NOMBRE_TIENDA}}. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/{{WHATSAPP}}" class="whatsapp-float" target="_blank">💬</a>
+
+</body>
+</html>

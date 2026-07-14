@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mockups Ferretería Ingco - Portfolio</title>
+  <style>
+    :root {
+      --black: #1A1A1A;
+      --orange: #FF6600;
+      --white: #FFFFFF;
+      --gray: #F5F5F5;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--black);
+      color: var(--white);
+      min-height: 100vh;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 40px 40px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 span { color: var(--orange); }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.7);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.3s;
+      text-decoration: none;
+      color: var(--white);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: var(--orange);
+      box-shadow: 0 20px 40px rgba(255,102,0,0.2);
+    }
+
+    .card-preview {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:nth-child(1) .card-preview { background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%); }
+    .card:nth-child(2) .card-preview { background: linear-gradient(135deg, #2D0A00 0%, #1A1A1A 100%); }
+    .card:nth-child(3) .card-preview { background: linear-gradient(135deg, #F5F5F5 0%, #E0E0E0 100%); }
+    .card:nth-child(4) .card-preview { background: linear-gradient(135deg, #333 0%, #1A1A1A 100%); }
+
+    .card:nth-child(3) .card-preview span { color: #333; }
+
+    .card-body {
+      padding: 24px;
+    }
+
+    .card-tag {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--white);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .card-body h3 {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+
+    .card-body p {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .card-footer {
+      padding: 0 24px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .card-link {
+      color: var(--orange);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .card-arrow {
+      width: 36px;
+      height: 36px;
+      background: var(--orange);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      transition: transform 0.2s;
+    }
+
+    .card:hover .card-arrow {
+      transform: translateX(4px);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 40px;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Mockups <span>Ferretería Ingco</span></h1>
+    <p>4 propuestas de diseño web para una ferretería oficial Ingco. Elegí una para verla completa.</p>
+  </div>
+
+  <div class="cards">
+
+    <a href="landing-1-profesional.html" target="_blank" class="card">
+      <div class="card-preview">🏢</div>
+      <div class="card-body">
+        <span class="card-tag">Mockup 1</span>
+        <h3>Profesional / Corporativa</h3>
+        <p>Hero corporativo, estadísticas de marca, banda de confianza y testimonios de clientes.</p>
+      </div>
+      <div class="card-footer">
+        <span class="card-link">Ver landing</span>
+        <div class="card-arrow">→</div>
+      </div>
+    </a>
+
+    <a href="landing-2-ofertas.html" target="_blank" class="card">
+      <div class="card-preview">🔥</div>
+      <div class="card-body">
+        <span class="card-tag">Mockup 2</span>
+        <h3>Promocional / Ofertas</h3>
+        <p>Countdown de ofertas, badges de descuento, banner de urgencia y newsletter.</p>
+      </div>
+      <div class="card-footer">
+        <span class="card-link">Ver landing</span>
+        <div class="card-arrow">→</div>
+      </div>
+    </a>
+
+    <a href="landing-3-catalogo.html" target="_blank" class="card">
+      <div class="card-preview">📦</div>
+      <div class="card-body">
+        <span class="card-tag">Mockup 3</span>
+        <h3>Minimalista / Catálogo</h3>
+        <p>Header limpio, sidebar con filtros, grid de productos y footer simple.</p>
+      </div>
+      <div class="card-footer">
+        <span class="card-link">Ver landing</span>
+        <div class="card-arrow">→</div>
+      </div>
+    </a>
+
+    <a href="landing-4-home.html" target="_blank" class="card">
+      <div class="card-preview">🏠</div>
+      <div class="card-body">
+        <span class="card-tag">Mockup 4</span>
+        <h3>Home / Clásica</h3>
+        <p>Hero con CTA, categorías con iconos, productos destacados y footer completo.</p>
+      </div>
+      <div class="card-footer">
+        <span class="card-link">Ver landing</span>
+        <div class="card-arrow">→</div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="footer">
+    <p>Mockups para Ferretería Ingco © 2026</p>
+  </div>
+
+</body>
+</html>

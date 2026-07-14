@@ -1,0 +1,12 @@
+{
+  "name": "ingco-ferreteria-mockups",
+  "version": "1.0.0",
+  "description": "Generador automático de mockups para ferretería Ingco",
+  "scripts": {
+    "generate": "node scripts/generate.js",
+    "dev": "node scripts/generate.js && start mockups/home.html"
+  },
+  "keywords": ["ingco", "ferreteria", "mockups"],
+  "author": "",
+  "license": "MIT"
+}

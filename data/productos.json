@@ -1,0 +1,239 @@
+{
+  "tienda": {
+    "nombre": "Ingco Ferretería",
+    "slogan": "Herramientas profesionales de calidad mundial",
+    "whatsapp": "+5491100000000",
+    "direccion": "Av. Ejemplo 1234, Ciudad",
+    "horario": "Lunes a Sábado: 8:00 - 18:00"
+  },
+  "categorias": [
+    { "id": "electricas", "nombre": "Herramientas Eléctricas", "icono": "⚡" },
+    { "id": "manuales", "nombre": "Herramientas Manuales", "icono": "🔧" },
+    { "id": "jardin", "nombre": "Jardín", "icono": "🌿" },
+    { "id": "seguridad", "nombre": "Seguridad Industrial", "icono": "🦺" },
+    { "id": "construccion", "nombre": "Construcción", "icono": "🏗️" },
+    { "id": "automotriz", "nombre": "Automotriz", "icono": "🚗" }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Taladro Percutor 680W",
+      "categoria": "electricas",
+      "precio": 48.00,
+      "precio_original": 55.00,
+      "descripcion": "Taladro percutor profesional de 680W con mango ergonomico. Ideal para trabajos de taladrado en madera, metal y hormigón.",
+      "destacado": true,
+      "imagen": "taladro.png",
+      "specs": ["680W", "13mm", "3000 RPM"]
+    },
+    {
+      "id": 2,
+      "nombre": "Amoladora Angular 4.5\" 750W",
+      "categoria": "electricas",
+      "precio": 56.80,
+      "precio_original": null,
+      "descripcion": "Amoladora angular de 4.5 pulgadas con motor de 750W. Perfecta para corte y desbaste de metales.",
+      "destacado": true,
+      "imagen": "amoladora.png",
+      "specs": ["750W", "4.5\"", "11000 RPM"]
+    },
+    {
+      "id": 3,
+      "nombre": "Sierra Circular 7.25\" 1500W",
+      "categoria": "electricas",
+      "precio": 120.00,
+      "precio_original": 140.00,
+      "descripcion": "Sierra circular de 7.25 pulgadas con guía láser. Corte preciso en madera y materiales compuestos.",
+      "destacado": true,
+      "imagen": "sierra-circular.png",
+      "specs": ["1500W", "7.25\"", "5000 RPM"]
+    },
+    {
+      "id": 4,
+      "nombre": "Rotomartillo 1500W 5.5J",
+      "categoria": "electricas",
+      "precio": 159.00,
+      "precio_original": null,
+      "descripcion": "Rotomartillo profesional con percusión de 5.5 Julios. Para taladrado y rotura de hormigón.",
+      "destacado": false,
+      "imagen": "rotomartillo.png",
+      "specs": ["1500W", "5.5J", "800W"]
+    },
+    {
+      "id": 5,
+      "nombre": "Lijadora Orbital 240W",
+      "categoria": "electricas",
+      "precio": 52.00,
+      "precio_original": null,
+      "descripcion": "Lijadora orbital de 240W con base de 110x100mm. Para acabados finos en madera y metal.",
+      "destacado": false,
+      "imagen": "lijadora.png",
+      "specs": ["240W", "110x100mm", "12000 OPM"]
+    },
+    {
+      "id": 6,
+      "nombre": "Set x 9 Llaves Combinadas CR-V",
+      "categoria": "manuales",
+      "precio": 25.00,
+      "precio_original": 30.00,
+      "descripcion": "Juego de 9 llaves combinadas de acero cromado-vanadio. Medidas desde 6mm hasta 22mm.",
+      "destacado": true,
+      "imagen": "llaves.png",
+      "specs": ["9 piezas", "CR-V", "6-22mm"]
+    },
+    {
+      "id": 7,
+      "nombre": "Martillo Demoledor 1500W 25J",
+      "categoria": "electricas",
+      "precio": 418.38,
+      "precio_original": 450.00,
+      "descripcion": "Martillo demoledor industrial de 25 Julios. Para demoliciones pesadas y trabajos de construcción.",
+      "destacado": true,
+      "imagen": "martillo-demoledor.png",
+      "specs": ["1500W", "25J", "Hex 30mm"]
+    },
+    {
+      "id": 8,
+      "nombre": "Set x 10 Formones CR-V",
+      "categoria": "manuales",
+      "precio": 15.00,
+      "precio_original": null,
+      "descripcion": "Juego de 10 formones de acero CR-V con mango ergonómico. Para trabajos de carpintería.",
+      "destacado": false,
+      "imagen": "formones.png",
+      "specs": ["10 piezas", "CR-V", "Carpintería"]
+    },
+    {
+      "id": 9,
+      "nombre": "Pistola de Silicona 25W",
+      "categoria": "manuales",
+      "precio": 16.00,
+      "precio_original": null,
+      "descripcion": "Pistola de silicona caliente de 25W. Para pegamento en barra de 11mm.",
+      "destacado": false,
+      "imagen": "pistola-silicona.png",
+      "specs": ["25W", "11mm", "Caliente"]
+    },
+    {
+      "id": 10,
+      "nombre": "Nivel Burbuja Set x 3",
+      "categoria": "manuales",
+      "precio": 18.00,
+      "precio_original": null,
+      "descripcion": "Set de 3 niveles de burbuja de 40, 60 y 100cm. Para alineación y medición precisa.",
+      "destacado": false,
+      "imagen": "niveles.png",
+      "specs": ["3 piezas", "40/60/100cm", "Aluminio"]
+    },
+    {
+      "id": 11,
+      "nombre": "Tijera de Poda Telescópica 760mm",
+      "categoria": "jardin",
+      "precio": 31.00,
+      "precio_original": null,
+      "descripcion": "Tijera de poda telescópica de 760mm para ramas altas. Mango extensible.",
+      "destacado": false,
+      "imagen": "tijera-poda.png",
+      "specs": ["760mm", "Telescópica", "Acero"]
+    },
+    {
+      "id": 12,
+      "nombre": "Motosierra 18\" a Combustión",
+      "categoria": "jardin",
+      "precio": 161.44,
+      "precio_original": 180.00,
+      "descripcion": "Motosierra de 18 pulgadas con motor a combustión. Para tala y poda de árboles.",
+      "destacado": true,
+      "imagen": "motosierra.png",
+      "specs": ["18\"", "Combustión", "2 tiempos"]
+    },
+    {
+      "id": 13,
+      "nombre": "Cortacésped 141CC Autopropulsado",
+      "categoria": "jardin",
+      "precio": 533.00,
+      "precio_original": null,
+      "descripcion": "Cortacésped a nafta de 141CC con tracción propia. Corta hasta 46cm de ancho.",
+      "destacado": false,
+      "imagen": "cortacesped.png",
+      "specs": ["141CC", "Autopropulsado", "46cm"]
+    },
+    {
+      "id": 14,
+      "nombre": "Chaleco de Seguridad Reflectante",
+      "categoria": "seguridad",
+      "precio": 8.50,
+      "precio_original": null,
+      "descripcion": "Chaleco de seguridad con cinta reflectante. Colores vivos para máxima visibilidad.",
+      "destacado": false,
+      "imagen": "chaleco.png",
+      "specs": ["Reflectante", "Talle M/L/XL", "Naranja"]
+    },
+    {
+      "id": 15,
+      "nombre": "Casco de Seguridad Industrial",
+      "categoria": "seguridad",
+      "precio": 12.00,
+      "precio_original": null,
+      "descripcion": "Casco de seguridad con suspensión ajustable. Resistente a impactos y caídas.",
+      "destacado": false,
+      "imagen": "casco.png",
+      "specs": ["ABS", "Ajustable", "Certificado"]
+    },
+    {
+      "id": 16,
+      "nombre": "Guantes de Trabajo Cataléx",
+      "categoria": "seguridad",
+      "precio": 6.00,
+      "precio_original": null,
+      "descripcion": "Guantes de trabajo con revestimiento antideslizante. Para manipulación de herramientas.",
+      "destacado": false,
+      "imagen": "guantes.png",
+      "specs": ["Antideslizante", "Talle M/L", "Resistentes"]
+    },
+    {
+      "id": 17,
+      "nombre": "Compresor de Aire 2HP",
+      "categoria": "electricas",
+      "precio": 280.00,
+      "precio_original": 320.00,
+      "descripcion": "Compresor de aire de 2HP con tanque de 50 litros. Para inflado y herramientas neumáticas.",
+      "destacado": false,
+      "imagen": "compresor.png",
+      "specs": ["2HP", "50L", "8 bar"]
+    },
+    {
+      "id": 18,
+      "nombre": "Pistola de Pintar 400CC",
+      "categoria": "electricas",
+      "precio": 24.00,
+      "precio_original": null,
+      "descripcion": "Pistola de pintar base coat de 400CC con boquilla de 1.5mm. Para acabados profesionales.",
+      "destacado": false,
+      "imagen": "pistola-pintar.png",
+      "specs": ["400CC", "1.5mm", "Base Coat"]
+    },
+    {
+      "id": 19,
+      "nombre": "Set x 3 Niveles de Burbuja",
+      "categoria": "construccion",
+      "precio": 18.00,
+      "precio_original": null,
+      "descripcion": "Set de 3 niveles de burbuja para construcción. Medidas: 40cm, 60cm y 100cm.",
+      "destacado": false,
+      "imagen": "niveles-construccion.png",
+      "specs": ["3 piezas", "Aluminio", "Precisión"]
+    },
+    {
+      "id": 20,
+      "nombre": "Tester Multímetro Digital 1000V",
+      "categoria": "electricas",
+      "precio": 48.00,
+      "precio_original": null,
+      "descripcion": "Multímetro digital CAT III 1000V AC/DC. Para medición de voltaje, corriente y resistencia.",
+      "destacado": false,
+      "imagen": "multimetro.png",
+      "specs": ["1000V", "CAT III", "Digital"]
+    }
+  ]
+}

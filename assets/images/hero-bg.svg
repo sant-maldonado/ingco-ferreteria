@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect fill="#1A1A1A" width="400" height="300"/>
+  <g transform="translate(200,150)">
+    <!-- Hero tools group -->
+    <rect x="-80" y="-30" width="50" height="60" rx="5" fill="#FF6600" opacity="0.9"/>
+    <rect x="-30" y="-40" width="60" height="80" rx="8" fill="#FF6600"/>
+    <rect x="30" y="-25" width="50" height="50" rx="5" fill="#FF6600" opacity="0.9"/>
+  </g>
+  <text x="200" y="260" text-anchor="middle" fill="#FF6600" font-family="Arial" font-size="18" font-weight="bold">INGCO</text>
+</svg>
