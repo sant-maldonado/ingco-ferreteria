@@ -145,6 +145,56 @@
       color: rgba(255,255,255,0.4);
       font-size: 0.85rem;
     }
+
+    /* Contacto fijo abajo */
+    .contact-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(26,26,26,0.95);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(255,102,0,0.3);
+      padding: 14px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+    }
+
+    .contact-bar-name {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--orange);
+    }
+
+    .contact-bar-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .contact-bar-links a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+
+    .contact-bar-links a:hover {
+      color: var(--orange);
+    }
+
+    .contact-bar-links .icon {
+      font-size: 1rem;
+    }
+
+    body {
+      padding-bottom: 60px;
+    }
   </style>
 </head>
 <body>
@@ -212,6 +262,22 @@
 
   <div class="footer">
     <p>Mockups para Ferretería Ingco © 2026</p>
+  </div>
+
+  <!-- Contacto fijo -->
+  <div class="contact-bar">
+    <span class="contact-bar-name">Santiago Maldonado</span>
+    <div class="contact-bar-links">
+      <a href="https://www.linkedin.com/in/santiago-maldonado-3b432b361/" target="_blank">
+        <span class="icon">💼</span> LinkedIn
+      </a>
+      <a href="https://wa.me/5493413502389" target="_blank">
+        <span class="icon">📱</span> WhatsApp
+      </a>
+      <a href="mailto:sm.santiagomaldonado@gmail.com">
+        <span class="icon">✉️</span> Email
+      </a>
+    </div>
   </div>
 
 </body>
