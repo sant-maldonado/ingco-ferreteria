@@ -263,3 +263,36 @@
   .hero-promo-countdown { justify-content: center; }
   .newsletter-form { flex-direction: column; align-items: center; }
 }
+
+@media (max-width: 768px) {
+  .hero-promo { padding: 50px 20px; }
+  .hero-promo h1 { font-size: 2.2rem; }
+  .hero-promo-badge { font-size: 0.75rem; padding: 6px 16px; }
+  .hero-promo-countdown { gap: 10px; }
+  .countdown-item { padding: 12px 14px; min-width: 60px; }
+  .countdown-num { font-size: 1.5rem; }
+  .countdown-label { font-size: 0.65rem; }
+  .promo-card-big { padding: 24px; }
+  .promo-card-img { font-size: 3.5rem; }
+  .promo-card-price .promo-new { font-size: 1.5rem; }
+  .promo-banner-urgencia { font-size: 0.85rem; padding: 10px 16px; }
+  .newsletter-section { padding: 40px 20px; }
+  .newsletter-content h3 { font-size: 1.4rem; }
+  .newsletter-form input { max-width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .hero-promo { padding: 36px 16px; }
+  .hero-promo h1 { font-size: 1.7rem; }
+  .hero-promo-badge { font-size: 0.65rem; padding: 5px 12px; }
+  .hero-promo-countdown { gap: 8px; flex-wrap: wrap; justify-content: center; }
+  .countdown-item { padding: 10px 10px; min-width: 50px; }
+  .countdown-num { font-size: 1.2rem; }
+  .promo-card-big { padding: 16px; }
+  .promo-card-img { font-size: 2.5rem; }
+  .promo-card-price .promo-old { font-size: 0.85rem; }
+  .promo-card-price .promo-new { font-size: 1.2rem; }
+  .promo-card-big::before { font-size: 0.7rem; padding: 6px 30px; top: 10px; right: -35px; }
+  .newsletter-content h3 { font-size: 1.2rem; }
+  .newsletter-content p { font-size: 0.85rem; }
+}
