@@ -1,0 +1,43 @@
+/* ============================================
+   LANDING X - [NOMBRE DE LA LANDING]
+   ============================================ */
+
+/* ---- ESTILOS ESPECIFICOS ---- */
+/* Agregar estilos unicos de esta landing aqui */
+
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   Siempre incluir estos 3 breakpoints:
+   - 900px  → tablets
+   - 768px  → phones grandes / landscape
+   - 480px  → phones pequenos / portrait
+   ============================================ */
+
+/* Tablet */
+@media (max-width: 900px) {
+  /* Grids de 2 columnas → 1 columna */
+  /* Hero content → centrado */
+  /* Sidebar → flex horizontal o oculto */
+}
+
+/* Phone grande */
+@media (max-width: 768px) {
+  /* Padding: 40px → 20px */
+  /* Font h1: 3rem → 2.2rem */
+  /* Font p: 1.1rem → 1rem */
+  /* Botones: reducir padding */
+  /* Grids: ajustar minmax */
+  /* Stats/gaps: reducir espacio */
+  /* Footer: 1 columna */
+}
+
+/* Phone pequeno */
+@media (max-width: 480px) {
+  /* Padding: 20px → 16px */
+  /* Font h1: 2.2rem → 1.7rem */
+  /* Font p: 1rem → 0.85rem */
+  /* Grids: 1 columna o 2 columnas ajustadas */
+  /* Sidebar: apilar verticalmente */
+  /* Footer: centrado y apilado */
+}

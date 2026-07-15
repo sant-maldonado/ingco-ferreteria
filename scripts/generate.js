@@ -5,6 +5,35 @@ const DATA_PATH = path.join(__dirname, '..', 'data', 'productos.json');
 const TEMPLATES_DIR = path.join(__dirname, '..', 'templates');
 const MOCKUPS_DIR = path.join(__dirname, '..', 'mockups');
 
+// =============================================
+// REGLAS RESPONSIVE (guardado para futuras landings)
+// =============================================
+// TODAS las landings DEBEN incluir responsive con 3 breakpoints:
+//
+// 1. @media (max-width: 900px)  → Tablets
+//    - Grids de 2+ cols → 1 columna o 2 max
+//    - Hero content → centrado
+//    - Sidebar → flex horizontal
+//
+// 2. @media (max-width: 768px)  → Phones grandes
+//    - Padding: 40px → 20px
+//    - Font h1: 3rem → 2.2rem
+//    - Font p: 1.1rem → 1rem
+//    - Botones: reducir padding
+//    - Grids: ajustar minmax (min 160px)
+//    - Stats/gaps: reducir
+//    - Footer: 1 columna
+//
+// 3. @media (max-width: 480px)  → Phones pequenos
+//    - Padding: 20px → 16px
+//    - Font h1: 2.2rem → 1.7rem
+//    - Font p: 1rem → 0.85rem
+//    - Grids: 1 columna o 2 cols ajustadas
+//    - Sidebar: apilar vertical
+//    - Footer: centrado y apilado
+//
+// Ver templates/landing-template.css como referencia
+
 function cargarDatos() {
   const raw = fs.readFileSync(DATA_PATH, 'utf-8');
   return JSON.parse(raw);
